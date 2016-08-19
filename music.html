@@ -1,0 +1,800 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>音乐坊</title>
+<style>
+*{ margin:0px;
+padding:0px;
+border:0px;}
+
+body{ font-family:Verdana, Geneva, sans-serif;
+font-size:12px;}
+
+img{ float:left;
+margin:5px;}
+
+ul{ list-style:none;
+padding-top:3px;}
+
+li{  float:left;
+	width:112px;
+height:20px;}
+
+#box{ width:1003px;
+height:1660px;
+border:1px dotted #000;
+margin:auto;
+}
+
+#top{ width:1003px;
+height:149px;
+border:1px dotted #000;
+margin:auto;
+background:url(images/701.jpg);
+background-repeat:no-repeat;
+
+}
+
+#menu{ width:811px;
+height:31px;
+border:1px dotted #000;
+margin:auto;
+margin-top:-11px;
+background:url(images/702.gif);
+}
+
+#menu li{ width:70px;
+height:25px;
+padding-top:5px;
+margin-left:10px;
+margin-right:10px;
+float:left;}
+
+#search{clear:both; 
+width:755px;
+height:36px;
+border:1px dotted #000;
+margin:auto;
+padding-top:5px;
+text-align:right;
+}
+
+#left{width:222px;
+	height:1310px;
+	border:1px dotted #000;
+	float:left;}
+	
+#title1{ width:204px;
+height:26px;
+border:1px dotted #000;
+margin:auto;
+background:url(images/703.gif);
+background-repeat:no-repeat;
+font-weight:bolder;
+color:#FFF;
+letter-spacing:2px;
+padding-left:16px;
+padding-top:3px;}
+
+#notice{ width:198px;
+height:89px;
+border:1px dotted #000;
+margin:auto;
+line-height:17px;
+padding-bottom:20px;}
+
+#notice span{ color:#F00;}
+
+#title2{ width:204px;
+height:26px;
+border:1px dotted #000;
+margin:auto;
+background:url(images/704.gif);
+background-repeat:no-repeat;
+font-weight:bolder;
+color:#FFF;
+letter-spacing:2px;
+padding-left:16px;
+padding-top:3px;}
+
+#music{ width:196px;
+height:265px;
+border:1px dotted #000;
+margin:auto;}
+
+#music dt{ background:url(images/714.gif);
+background-repeat:no-repeat;
+background-position:3px 5px;
+width:90px;
+height:20px;
+padding-left:13px;
+float:left;
+border-bottom:1px dotted #333333;}
+
+#music dd{ width:70px;
+height:20px;
+padding-left:22px;
+float:left;
+border-bottom:1px dotted #333333;}
+
+#title3{ width:204px;
+height:26px;
+border:1px dotted #000;
+margin:auto;
+background:url(images/705.gif);
+background-repeat:no-repeat;
+font-weight:bolder;
+color:#FFF;
+letter-spacing:2px;
+padding-left:16px;
+padding-top:3px;}
+
+.star{ width:199px;
+height:83px;
+border:1px dotted #000;
+margin:auto;
+margin-top:10px;
+margin-bottom:10px;}
+
+.star ul{ margin-top:15px;}
+
+#title4{ width:204px;
+height:26px;
+border:1px dotted #000;
+margin:auto;
+background:url(images/703.gif);
+background-repeat:no-repeat;
+font-weight:bolder;
+color:#FFF;
+letter-spacing:2px;
+padding-left:16px;
+padding-top:3px;}
+
+#tip{ width:198px;
+height:92px;
+border:1px dotted #000;
+margin:auto;
+padding-left:3px;
+line-height:17px;}
+
+#listen{ width:194px;
+height:105px;
+border:1px dotted #000;
+margin:auto;
+margin-top:30px;}
+
+#middle{width:640px;
+	height:1310px;
+	border:1px dotted #000;
+	float:left;}
+
+#mtitle{ width:620px;
+height:26px;
+border:1px dotted #000;
+margin:auto;
+background:url(images/706.gif);
+background-repeat:no-repeat;
+font-weight:bolder;
+color:#FFF;
+letter-spacing:2px;
+padding-left:16px;
+padding-top:3px;}
+
+.m-music{ width:88px;
+height:124px;
+border:1px dotted #000;
+margin-top:14px;
+float:left;}
+
+.m-music img{ margin-top:0px;
+margin-left:8px;}
+
+.m-music li{ width:90px;
+height:20px;
+margin-left:20px;}
+
+#news{clear:both; 
+width:640px;
+height:82px;
+border:1px dotted #000;
+margin:auto;
+background:url(images/724.gif);
+background-repeat:no-repeat;}
+
+#m1{ width:426px;
+height:284px;
+border:1px dotted #000;
+float:left;}
+
+#m1 li{float:left;
+	width:130px;
+height:20px;}
+
+#m1-t{ width:406px;
+height:28px;
+border:1px dotted #000;
+margin:auto;
+background:url(images/707.gif);
+background-repeat:no-repeat;
+font-weight:bolder;
+color:#FFF;
+letter-spacing:2px;
+padding-left:16px;
+padding-top:3px;}
+
+#m1-c1{ margin-left:12px;
+margin-top:5px; 
+width:200px;
+height:65px;
+float:left;
+}
+
+#m1-c2{margin-top:5px;  
+width:200px;
+height:65px;
+float:left;
+}
+
+#m1-c3{  margin-left:12px;
+margin-top:5px;
+clear:both;
+width:200px;
+height:65px;
+float:left;
+}
+
+#m1-c4{margin-top:5px; 
+ width:200px;
+height:65px;
+float:left;
+}
+
+#m1-c5{  margin-left:12px;
+margin-top:5px;
+clear:both;
+width:200px;
+height:65px;
+float:left;
+}
+
+#m1-c6{ margin-top:5px; 
+width:200px;
+height:65px;
+float:left;
+}
+
+#m2{ width:210px;
+height:284px;
+border:1px dotted #000;
+float:left;}
+
+#m2-t{ width:192px;
+height:26px;
+border:1px dotted #000;
+margin:auto;
+background:url(images/708.gif);
+background-repeat:no-repeat;
+font-weight:bolder;
+color:#FFF;
+letter-spacing:2px;
+padding-left:16px;
+padding-top:3px;}
+
+#m2-c dl{ margin-top:15px;}
+
+#m2-c dt{ background:url(images/727.gif);
+background-repeat:no-repeat;
+background-position:3px 2px;
+width:110px;
+height:20px;
+padding-left:16px;
+float:left;
+border-bottom:1px dotted #333333;
+font-weight:normal;
+color:#000;}
+
+#m2-c dd{ width:70px;
+height:20px;
+float:left;
+border-bottom:1px dotted #333333;
+color:#F90;
+font-weight:normal;}
+#m3{ clear:both;
+width:210px;
+height:294px;
+border:1px dotted #000;
+float:left;}
+
+#m3-t{ width:192px;
+height:26px;
+border:1px dotted #000;
+margin:auto;
+background:url(images/708.gif);
+background-repeat:no-repeat;
+font-weight:bolder;
+color:#FFF;
+letter-spacing:2px;
+padding-left:16px;
+padding-top:3px;}
+
+#m3-c dl{ margin-top:30px;}
+
+#m3-c dt{ background:url(images/728.gif);
+background-repeat:no-repeat;
+background-position:3px 5px;
+width:80px;
+height:20px;
+padding-left:13px;
+float:left;
+border-bottom:1px dotted #333333;
+font-weight:normal;
+color:#000;}
+
+#m3-c dd{ width:70px;
+height:20px;
+padding-left:22px;
+float:left;
+border-bottom:1px dotted #333333;
+color:#F90;
+font-weight:normal;}
+
+#m4{ width:210px;
+height:294px;
+border:1px dotted #000;
+float:left;}
+
+#m4-t{ width:192px;
+height:26px;
+border:1px dotted #000;
+margin:auto;
+background:url(images/709.gif);
+background-repeat:no-repeat;
+font-weight:bolder;
+color:#FFF;
+letter-spacing:2px;
+padding-left:16px;
+padding-top:3px;}
+
+#m4-c dl{ margin-top:15px;
+margin-left:5px;}
+
+#m4-c dt{ background:url(images/729.gif);
+background-repeat:no-repeat;
+background-position:3px 5px;
+width:90px;
+height:20px;
+padding-left:13px;
+float:left;
+border-bottom:1px dotted #333333;
+font-weight:normal;
+color:#000;}
+
+#m4-c dd{ width:70px;
+height:20px;
+padding-left:25px;
+float:left;
+border-bottom:1px dotted #333333;
+color:#0FF;
+font-weight:normal;}
+
+#m5{ width:210px;
+height:261px;
+border:1px dotted #000;
+float:left;}
+
+#m5-t{ width:192px;
+height:26px;
+border:1px dotted #000;
+margin:auto;
+background:url(images/710.gif);
+background-repeat:no-repeat;
+font-weight:bolder;
+color:#FFF;
+letter-spacing:2px;
+padding-left:16px;
+padding-top:3px;}
+
+.m5-c{ width:184px;
+height:65px;
+border:1px dotted #000;
+margin-left:15px;}
+
+#m6{ clear:both; 
+width:620px;
+height:28px;
+border:1px dotted #000;
+margin:auto;
+background:url(images/711.gif);
+background-repeat:no-repeat;
+font-weight:bolder;
+color:#FFF;
+letter-spacing:2px;
+padding-left:16px;
+padding-top:3px;}
+
+.m7{ width:625px;
+height:100px;
+border:1px dotted #000;
+margin-left:5px;}
+
+.m7 li{
+width:300px;
+height:20px;
+margin-left:15px;}
+
+.m7 img{ margin-top:15px;}
+	
+#right{width:130px;
+	height:400px;
+	border:1px dotted #000;
+	float:left;
+	background:url(images/734.jpg);
+	background-repeat:no-repeat;}
+	
+#bottom{ clear:both; 
+width:1003px;
+height:112px;
+border:1px dotted #000;
+margin:auto;
+background:url(images/712.gif);
+background-repeat:repeat-x;
+background-position:bottom;
+}
+	
+#nav{ width:811px;
+    height:31px;
+	border:1px dotted #000;
+    margin:auto;
+    background:url(images/702.gif);}
+	
+#nav li{ width:70px;
+height:25px;
+padding-top:5px;
+margin-left:10px;
+margin-right:10px;
+float:left;}
+
+#address{ clear:both; 
+width:1003px;
+height:80px;
+border:1px dotted #000;
+margin:auto;
+text-align:center;
+line-height:20px;}
+</style>
+</head>
+
+
+<body>
+<div id="box">
+<div id="top"></div>
+<div id="menu">
+    <ul>
+      <li>音乐首页</li>
+      <li>最新更新</li>
+      <li>栋力推荐</li>
+      <li>栋力排行</li>
+      <li>栋力曲库</li>
+      <li>音乐坊</li>
+      <li>音乐论坛</li>
+      <li>今日排行</li>
+      <li>上传歌曲</li>
+    </ul>
+    </div>
+<div id="search"><p><pre>[歌曲搜索] 类别：按歌曲名  搜索 关键字： 查找</pre></p></div>
+<div id="left">
+<div id="title1"><p>栋力公告</p></div>
+<div id="notice"><p><br>欢迎光临栋力无限音乐站！本网站所有歌曲均来自互联网，欢迎用户上传歌曲的<span>Lrc</span>格式歌词，所有用户在登录后上传的歌词在播放时将显示歌词上传者。</p></div>
+<div id="title2"><p>栋力推荐单曲</p></div>
+<div id="music">
+<dl>
+<dt style="margin-top:12px;">张韶涵</dt>
+<dd style="margin-top:12px;">隐形的翅膀</dd>
+<dt>离歌</dt>
+<dd>信乐团</dd>
+<dt>胡说胡有理</dt>
+<dd>花儿乐队</dd>
+<dt>亲爱的</dt>
+<dd>徐若瑄</dd>
+<dt>忘不了</dt>
+<dd>陶吉吉</dd>
+<dt>飞行部落</dt>
+<dd>飞儿乐团</dd>
+<dt>触电</dt>
+<dd>S.H.E</dd>
+<dt>一千零一夜</dt>
+<dd>蜜雪薇琪</dd>
+<dt>千里之外</dt>
+<dd>周杰伦</dd>
+<dt>原来刘</dt>
+<dd>刘芮伊</dd>
+</dl><img src="images/715.gif" style="margin-left:90px; margin-top:12px;">
+</div>
+<div id="title3"><p>音乐人气之星</p></div>
+<div class="star"><img src="images/716.gif">
+<ul>
+<li style="color:#0FF">名称：未命名</li>
+<li>主人：未命名</li>
+<li style="color:#F90">点击:1次</li>
+</ul>
+</div>
+<div class="star"><img src="images/717.gif";>
+<ul>
+<li style="color:#0FF">名称：意犹未尽</li>
+<li>主人：未命名</li>
+<li style="color:#F90">点击:1次</li>
+</ul>
+</div>
+<div class="star"><img src="images/716.gif">
+<ul>
+<li style="color:#0FF">名称：未命名</li>
+<li>主人：未命名</li>
+<li style="color:#F90">点击:1次</li>
+</ul>
+</div>
+<div class="star"><img src="images/716.gif">
+<ul>
+<li style="color:#0FF">名称：顽固</li>
+<li>主人：未命名</li>
+<li style="color:#F90">点击:1次</li>
+</ul>
+</div>
+<div class="star"><img src="images/717.gif";>
+<ul>
+<li style="color:#0FF">名称：sb.sth</li>
+<li>主人：未命名</li>
+<li style="color:#F90">点击:1次</li>
+</ul>
+</div>
+<div id="title4"><p>曲库统计</p></div>
+<div id="tip">歌手：1276位<br />
+专辑：3918张<br />
+歌曲：51219首<br />
+最近更新于：<br />
+2007-03-13 18:10:32 </div>
+<div id="listen"><img src="images/718.gif" style="margin-top:5px;"><br><br><img src="images/719.gif"></div>
+</div>
+<div id="middle">
+<div id="mtitle"><p>最新门专辑 Hot Albums</p></div>
+<div class="m-music" style="margin-left:5px;"><img src="images/720.gif">
+<ul>
+<li>潘多拉</li>
+<li style="color:#6C0">张韶涵</li>
+</ul>
+</div>
+<div class="m-music"><img src="images/733.gif" width="72" height="72">
+<ul>
+<li>英文歌曲1</li>
+<li style="color:#6C0">无名</li>
+</ul>
+</div>
+<div class="m-music"><img src="images/722.gif">
+<ul>
+<li>知足</li>
+<li style="color:#6C0">五月天</li>
+</ul>
+</div>
+<div class="m-music"><img src="images/733.gif" width="68" height="70">
+<ul>
+<li>blue plane</li>
+<li style="color:#6C0">Donnal</li>
+</ul>
+</div>
+<div class="m-music"><img src="images/733.gif" width="66" height="71">
+<ul>
+<li>在你身边</li>
+<li style="color:#6C0">张学友</li>
+</ul>
+</div>
+<div class="m-music"><img src="images/720.gif"><ul>
+<li style="margin-left:3px;">我们都是好孩子</li>
+<li style="color:#6C0">王争</li>
+</ul>
+</div>
+<div class="m-music"><img src="images/723.gif"><ul>
+<li>见习爱神</li>
+<li style="color:#6C0">Twins</li>
+</ul>
+</div>
+<div id="news"></div>
+<div id="m1">
+<div id="m1-t"><p>最新原唱更新</p></div>
+<div id="m1-c1"><img src="images/725.gif">
+<ul>
+<li style="color:#0FF">专辑：《笑忘书》</li>
+<li>更新：2007-03-13</li>
+<li style="color:#0FF">歌手：张敬轩</li>
+</ul>
+</div>
+<div id="m1-c2"><img src="images/726.gif">
+<ul>
+<li style="color:#0FF">专辑：《放开》</li>
+<li>更新：2007-03-12</li>
+<li style="color:#0FF">歌手：爱乐团</li>
+</ul>
+</div>
+<div id="m1-c3"><img src="images/726.gif">
+<ul>
+<li style="color:#0FF">专辑：《朋友难当》</li>
+<li>更新：2007-03-12</li>
+<li style="color:#0FF">歌手：羽泉</li>
+</ul>
+</div>
+<div id="m1-c4"><img src="images/725.gif">
+<ul>
+<li style="color:#0FF">专辑：《给自己情书》</li>
+<li>更新：2007-03-11</li>
+<li style="color:#0FF">歌手：梁咏琪</li>
+</ul>
+</div>
+<div id="m1-c5"><img src="images/725.gif">
+<ul>
+<li style="color:#0FF">专辑：《在你身边》</li>
+<li>更新：2007-03-11</li>
+<li style="color:#0FF">歌手：张学友</li>
+</ul>
+</div>
+<div id="m1-c6"><img src="images/725.gif">
+<ul>
+<li style="color:#0FF">专辑：《Thank You》</li>
+<li>更新：2007-03-11</li>
+<li style="color:#0FF">歌手：Declan</li>
+</ul>
+</div>
+</div>
+<div id="m2">
+<div id="m2-t"><p>最新上传歌曲</p></div>
+<div id="m2-c">
+     <dl>
+          <dt>晓之车</dt>
+          <dd>有感情的歌</dd>
+          <dt>在你身边</dt>
+          <dd>有感情的歌</dd>
+          <dt>My Love My D...</dt>
+          <dd>sb.sth</dd>
+          <dt>冷战</dt>
+          <dd>sb.sth</dd>
+          <dt>完整演出</dt>
+          <dd>sb.sth</dd>
+          <dt>解脱</dt>
+          <dd>sb.sth</dd>
+          <dt>文成公主</dt>
+          <dd>sb.sth</dd>
+          <dt>部落格</dt>
+          <dd>sb.sth</dd>
+          <dt>我懂</dt>
+          <dd>sb.sth</dd>
+          <dt>即然你问起</dt>
+          <dd>sb.sth </dd>
+        </dl>
+        </div>
+</div>
+<div id="m3">
+<div id="m3-t"><p>单曲排行</p>
+<div id="m3-c">
+<dl>
+          <dt>认真的雪</dt>
+          <dd>薛之谦</dd>
+          <dt>寓言</dt>
+          <dd>张韶涵</dd>
+          <dt>孙悟空</dt>
+          <dd>五月天</dd>
+          <dt>香水百合</dt>
+          <dd>张韶涵</dd>
+          <dt>美丽的插曲</dt>
+          <dd>萧亚轩</dd>
+          <dt>见习爱神</dt>
+          <dd>Twins</dd>
+          <dt>波斯猫</dt>
+          <dd>S.H.E</dd>
+          <dt>白月光</dt>
+          <dd>张信哲</dd>
+          <dt>就是你</dt>
+          <dd>范玮琪</dd>
+          <dt>我们都是...</dt>
+          <dd>王争</dd>
+        </dl>
+</div>
+</div>
+</div>
+<div id="m4">
+
+<div id="m4-t"><p>专辑排行</p></div>
+<div id="m4-c">
+<dl>
+<dt>《每首都是...》</dt>
+          <dd>杂锦合辑</dd>
+          <dt>《首选萧亚轩》</dt>
+          <dd>萧亚轩</dd>
+          <dt>《超级精选》</dt>
+          <dd>小虎队</dd>
+          <dt>《在你身边》</dt>
+          <dd>张学友</dd>
+          <dt>《保丽金30年》</dt>
+          <dd>获奖作品</dd>
+          <dt>《给自己的...》</dt>
+          <dd>梁咏琪</dd>
+          <dt>《潘朵拉》</dt>
+          <dd>张韶涵</dd>
+          <dt>《情歌对唱》</dt>
+          <dd>傅笛声</dd>
+          <dt>《至少还有你》</dt>
+          <dd>林忆莲</dd>
+          <dt>《奇幻旅程》</dt>
+          <dd>S.H.E</dd>
+</dl>
+</div>
+</div>
+<div id="m5">
+<div id="m5-t"><p>栋力推荐专辑</p></div>
+<div class="m5-c" style="margin-top:10px;"><img src="images/730.gif">
+<ul>
+<li style="color:#0FF">专辑：《亲亲》</li>
+<li>更新：2007-03-10</li>
+<li style="color:#0FF">歌手：梁静茹</li>
+</ul>
+</div>
+<div class="m5-c"><img src="images/731.gif">
+<ul>
+<li style="color:#0FF">专辑：《The one》</li>
+<li>更新：2007-03-10</li>
+<li style="color:#0FF">歌手：张靓颖</li>
+</ul></div>
+<div class="m5-c"><img src="images/731.gif">
+<ul>
+<li style="color:#0FF">专辑：《我爱邓》</li>
+<li>更新：2007-03-10</li>
+<li style="color:#0FF">歌手：张靓颖</li>
+</ul></div>
+</div>
+<div id="m6"><p>最新乐评</p></div>
+<div class="m7"><img src="images/732.gif">
+<ul>
+<li style="color:#F90; margin-top:15px;">《每首都是主打~~》</li>
+<li style="color:#0FF">Iuoyufei</li>
+<li>发几张babyface的专辑吧！！超级喜欢他的曲风</li>
+</ul>
+</div>
+<div class="m7"><img src="images/733.gif">
+<ul>
+<li style="color:#F90;margin-top:15px;">《莫文蔚精选集》</li>
+<li style="color:#0FF">jecci</li>
+<li>喜剧之王里的"the way you make me feel"谁有国语版啊?</li>
+</ul>
+</div>
+<div class="m7"><img src="images/733.gif">
+<ul>
+<li style="color:#F90";margin-top:15px;>《笑忘书》</li>
+<li style="color:#0FF">Leon</li>
+<li>一张不错的专辑！笑忘书，余震都很好听！</li>
+</ul>
+</div>
+<div class="m7"><img src="images/732.gif">
+<ul>
+<li style="color:#F90;margin-top:15px;">《每首都是主打~~》</li>
+<li style="color:#0FF">Lynxmao</li>
+<li>nice！</li>
+</ul>
+</div>
+</div>
+<div id="right"></div>
+<div id="bottom">
+<div id="nav">
+    <ul>
+      <li>音乐首页</li>
+      <li>最新更新</li>
+      <li>栋力推荐</li>
+      <li>栋力排行</li>
+      <li>栋力曲库</li>
+      <li>音乐坊</li>
+      <li>音乐论坛</li>
+      <li>今日排行</li>
+      <li>上传歌曲</li>
+    </ul>
+</div>
+<div id="address">Copyright&copy;2004-2007 Synx Studio of NetUnion in UESTC Asp.net V2.0<br />MusicAdmin@intojoy.com||Admin||令日访问4564次，总访问7458264次<br />推荐1024X768分辩率，Internet Explorer版本6.0或以上浏览器浏览本网站 Design By Flying All Rights Reserved. </div>
+</div>
+</div>
+</body>
+</html>
